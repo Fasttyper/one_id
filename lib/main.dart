@@ -10,34 +10,18 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final _controller = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text(
-            "OneID integration",
-            textAlign: TextAlign.center,
-          ),
+          title: Text("Shop"),
         ),
-        body: Center(
-          child: Container(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  width: 300,
-                  height: 80,
-                  child: TextField(
-                    controller: _controller,
-                    decoration:
-                        InputDecoration(hintText: "Please enter your password."),
-                  ),
-                ),
-              ],
-            ),
-          ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            
+          ],
         ),
       ),
     );
